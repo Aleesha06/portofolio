@@ -3,94 +3,82 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
     color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
-#hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
     color: white;
+    text-decoration: none;
 }
 
-#hero h2 {
-    font-size: 2.5em;
-}
-
-#portfolio {
-    padding: 50px;
-    background-color: white;
-    text-align: center;
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .gallery img {
     width: 100%;
     height: auto;
-}
-
-#about, #testimonials, #contact {
-    padding: 50px;
-    background-color: #f4f4f4;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-blockquote {
-    font-style: italic;
-    margin: 20px 0;
+    max-width: 250px;
 }
 
 form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-input, textarea {
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
     padding: 10px;
-    font-size: 1em;
-    width: 100%;
-    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-button {
+form button {
     padding: 10px;
     background-color: #333;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
+form button:hover {
     background-color: #555;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 1rem;
 }
