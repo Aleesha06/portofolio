@@ -1,77 +1,62 @@
-!DOCTYPE html
-html lang=id
-head
-    meta charset=UTF-8
-    meta name=viewport content=width=device-width, initial-scale=1.0
-    meta name=description content=Portofolio Fotografi
-    titlePortofolio Fotografertitle
-    link rel=stylesheet href=styles.css
-head
-body
-    header
-        h1Nama Fotograferh1
-        pFotografer Profesional  Spesialisasi [Jenis Fotografi]p
-    header
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fotografer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nama Fotografer</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    section id=hero
-        img src=hero-image.jpg alt=Fotografi terbaik
-        h2Selamat Datang di Portofolio Sayah2
-        pSaya seorang fotografer yang berfokus pada [Jenis Fotografi]. Berikut adalah karya-karya terbaik saya.p
-    section
+    <section id="home">
+        <h2>Selamat Datang di Portofolio Saya</h2>
+        <p>Ini adalah tempat untuk menampilkan hasil karya terbaik saya.</p>
+    </section>
 
-    section id=portfolio
-        h2Portofolioh2
-        div class=gallery
-            img src=foto1.jpg alt=Deskripsi Foto 1
-            img src=foto2.jpg alt=Deskripsi Foto 2
-            img src=foto3.jpg alt=Deskripsi Foto 3
-            !-- Tambahkan lebih banyak gambar sesuai kebutuhan --
-        div
-    section
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang fotografer dengan pengalaman bertahun-tahun dalam berbagai jenis fotografi.</p>
+    </section>
 
-    section id=about
-        h2Tentang Sayah2
-        pSaya [Nama Anda], seorang fotografer dengan pengalaman lebih dari [X] tahun dalam [jenis fotografi]. Saya telah bekerja dengan berbagai klien dan memenangkan beberapa penghargaan.p
-        h3Pengalaman & Prestasih3
-        ul
-            liPenghargaan A - 2021li
-            liProyek Besar B - 2020li
-            !-- Tambahkan lebih banyak pencapaian sesuai kebutuhan --
-        ul
-    section
+    <section id="portfolio">
+        <h2>Portofolio</h2>
+        <div class="gallery">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto3.jpg" alt="Foto 3">
+            <!-- Tambahkan lebih banyak foto sesuai kebutuhan -->
+        </div>
+    </section>
 
-    section id=testimonials
-        h2Testimonih2
-        blockquote
-            p[Testimoni dari klien]p
-            footer— Nama Klien, Perusahaanfooter
-        blockquote
-        !-- Tambahkan lebih banyak testimoni jika ada --
-    section
+    <section id="contact">
+        <h2>Kontak</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
 
-    section id=contact
-        h2Kontak Sayah2
-        form action=# method=post
-            label for=nameNamalabel
-            input type=text id=name name=name required
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-            label for=emailEmaillabel
-            input type=email id=email name=email required
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
 
-            label for=messagePesanlabel
-            textarea id=message name=message rows=4 requiredtextarea
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
 
-            button type=submitKirimbutton
-        form
-        pEmail a href=mailtoemail@example.comemail@example.comap
-        pTelepon +62 123 4567 890p
-        pIkuti saya dip
-        a href=httpsinstagram.comusername target=_blankInstagrama 
-        a href=httpsfacebook.comusername target=_blankFacebooka
-    section
-
-    footer
-        p&copy; 2024 Nama Fotografer. Semua Hak Dilindungi.p
-    footer
-body
-html
+    <footer>
+        <p>&copy; 2024 Nama Fotografer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
